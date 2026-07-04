@@ -76,7 +76,17 @@ function renderKort(items, boxSelector) {
       '<div class="inner">' +
       (p.typ ? '<div class="kort-typ">' + p.typ + '</div>' : '') +
       '<h3>' + p.namn + '</h3><p>' + p.text + '</p>' +
-      (klickbar ? '<div class="lank">Visa på kartan</div>' : '') + '</div>';
+      '<div class="kort-lankar">' +
+      (klickbar ? '<span class="lank">Visa på kartan</span>' : '') +
+      (p.lank ? '<span class="boka" data-url="' + p.lank + '">Till sajten &rarr;</span>' : '') +
+      (p.ta ? '<span class="boka" data-url="' + p.ta + '">TripAdvisor &rarr;</span>' : '') +
+      '</div></div>';
+    el.querySelectorAll(".boka").forEach(function (b) {
+      b.addEventListener("click", function (e) {
+        e.preventDefault(); e.stopPropagation();
+        window.open(b.getAttribute("data-url"), "_blank", "noopener");
+      });
+    });
     box.appendChild(el);
   });
 }
@@ -106,7 +116,12 @@ function byggKartaSida() {
     items.forEach(function (p) {
       if (p.lat == null) return;
       const m = L.marker([p.lat, p.lng], { icon: prickIkon(farg, bas) }).addTo(karta);
-      m.bindPopup('<div class="popup-text"><b>' + p.namn + '</b><span>' + p.text + '</span></div>');
+      m.bindPopup(
+        '<div class="popup-text"><b>' + p.namn + '</b><span>' + p.text + '</span>' +
+        (p.lank ? '<a class="popup-lank" href="' + p.lank + '" target="_blank" rel="noopener">Till sajten &rarr;</a>' : '') +
+        (p.ta ? '<a class="popup-lank" href="' + p.ta + '" target="_blank" rel="noopener">TripAdvisor &rarr;</a>' : '') +
+        '</div>'
+      );
       markorer[p.id] = m;
       alla.push({ marker: m, farg: farg, kat: kat, bas: bas });
     });

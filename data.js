@@ -84,16 +84,23 @@ const handla = [
 const boende = {
   id:"boende", namn:"Memo Top View Apartment",
   text:"Vårt boende — övre Hvar stad, havsutsikt, 9 min till torget.",
-  lat:43.1713, lng:16.4460
+  lat:43.1713, lng:16.4460,
+  lank:"https://www.booking.com/hotel/hr/memo-top-view-apartment-hvar.sv.html"
 };
 
 const restauranger = [
-  { id:"kantun", namn:"Kantun", typ:"Frukost", text:"Vårt frukostställe.", lat:43.1731, lng:16.4420 },
-  { id:"kava", namn:"Kava", typ:"Kaffe", text:"Morgonkaffet.", lat:43.1729, lng:16.4427 },
-  { id:"kinkin", namn:"Kinkin", typ:"Smörgåsar", text:"Goda mackor till stranden.", lat:43.1725, lng:16.4418 },
-  { id:"lamore", namn:"L'amore per il gelato", typ:"Gelato", text:"Krämig italiensk glass.", lat:43.1719, lng:16.4444 },
-  { id:"code11", namn:"Code 11", typ:"Restaurang", text:"Populär restaurang, öster om hamnen.", lat:43.1707, lng:16.4460 },
-  { id:"dieci", namn:"Dieci", typ:"Middag", text:"Vårt middagsställe vid hamnen.", lat:43.1721, lng:16.4406 },
+  { id:"kantun", namn:"Kantun", typ:"Frukost", text:"Bra frukoststopp för att starta dagen.",
+    lat:43.1731, lng:16.4420, ta:"https://www.tripadvisor.com/Search?q=Kantun%20Hvar" },
+  { id:"kava", namn:"Kava", typ:"Kaffe", text:"Mysigt kaffeställe för en lugn morgon.",
+    lat:43.1729, lng:16.4427, ta:"https://www.tripadvisor.com/Search?q=Kava%20Hvar" },
+  { id:"kinkin", namn:"Kinkin", typ:"Smörgåsar", text:"Goda mackor att ta med till stranden.",
+    lat:43.1725, lng:16.4418, ta:"https://www.tripadvisor.com/Search?q=Kinkin%20Hvar" },
+  { id:"lamore", namn:"L'amore per il gelato", typ:"Gelato", text:"Krämig italiensk gelato — perfekt i värmen.",
+    lat:43.1719, lng:16.4444, ta:"https://www.tripadvisor.com/Restaurant_Review-g303808-d21026556-Reviews-L_amore_Per_Il_Gelato-Hvar_Hvar_Island_Split_Dalmatia_County_Dalmatia.html" },
+  { id:"code11", namn:"Code 11", typ:"Restaurang", text:"Omtyckt restaurang med havsutsikt, öster om hamnen.",
+    lat:43.1707, lng:16.4460, lank:"https://code-11.hr/", ta:"https://www.tripadvisor.com/Restaurant_Review-g303808-d25563018-Reviews-Code_11-Hvar_Hvar_Island_Split_Dalmatia_County_Dalmatia.html" },
+  { id:"dieci", namn:"Dieci", typ:"Middag", text:"Mysig pizzeria vid hamnen med god italiensk mat.",
+    lat:43.1721, lng:16.4406, ta:"https://www.tripadvisor.com/Restaurant_Review-g303808-d27950693-Reviews-Pizzeria_Dieci_Hvar-Hvar_Hvar_Island_Split_Dalmatia_County_Dalmatia.html" },
 ];
 
 const lekar = [

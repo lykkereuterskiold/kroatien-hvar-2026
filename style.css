@@ -125,8 +125,13 @@ a.kort:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,0
 .kort-typ { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--guld); margin-bottom: 6px; }
 .kort h3 { font-family: "Playfair Display", serif; font-weight: 500; color: var(--djup); font-size: 1.35rem; margin-bottom: 6px; }
 .kort p { margin: 0; color: var(--mjuk); font-size: 0.96rem; }
-.kort .lank { margin-top: 14px; color: var(--hav); font-weight: 600; font-size: 0.88rem; }
+.kort-lankar { margin-top: 14px; display: flex; gap: 18px; flex-wrap: wrap; }
+.kort .lank { color: var(--hav); font-weight: 600; font-size: 0.88rem; }
+.kort .boka { color: var(--guld); font-weight: 600; font-size: 0.88rem; cursor: pointer; }
+.kort .boka:hover { text-decoration: underline; }
 .kort.info { border-top-color: var(--guld); }
+.popup-lank { display: inline-block; margin-top: 8px; margin-right: 14px; color: var(--guld); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
+.popup-lank:hover { text-decoration: underline; }
 
 /* ---------- Startsidans meny-rutor ---------- */
 .meny-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; margin-top: 8px; }
