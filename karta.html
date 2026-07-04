@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karta · Hvar 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="topp" data-aktiv="karta.html"></nav>
+
+  <div class="sidhuvud">
+    <h1>Karta</h1>
+    <p>Alla våra platser. Klicka på en nål för att läsa mer.</p>
+  </div>
+
+  <main>
+    <div id="karta"></div>
+    <p class="kart-hint">Tryck på en kategori för att förstora dess nålar.</p>
+    <div class="kart-teckenforklaring">
+      <span data-kat="utflykt"><i style="background:#2b8a8f"></i> Utflykter &amp; tips</span>
+      <span data-kat="uteliv"><i style="background:#dd8a5c"></i> Uteliv</span>
+      <span data-kat="mat"><i style="background:#a15c76"></i> Äta ute</span>
+      <span data-kat="handla"><i style="background:#7a9e5e"></i> Butiker</span>
+      <span data-kat="boende"><i style="background:#0f4a4f"></i> Vårt boende</span>
+    </div>
+  </main>
+
+  <footer>Hvar 2026 · Gjord med kärlek inför resan</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>byggKartaSida();</script>
+</body>
+</html>

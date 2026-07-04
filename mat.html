@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mat &amp; handla · Hvar 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="topp" data-aktiv="mat.html"></nav>
+
+  <div class="sidhuvud">
+    <h1>Mat &amp; handla</h1>
+    <p>Var vi handlar, vem som lagar och en gemensam inköpslista.</p>
+  </div>
+
+  <main>
+    <div class="grupp-rubrik">Äta ute</div>
+    <div class="kort-grid" id="restauranger"></div>
+
+    <div class="grupp-rubrik">Var vi handlar</div>
+    <div class="kort-grid" id="handla"></div>
+
+    <div class="grupp-rubrik">Inköpslista</div>
+    <div class="inkop">
+      <form id="inkop-form" class="inkop-form">
+        <input id="inkop-input" type="text" placeholder="Lägg till en vara..." autocomplete="off">
+        <button type="submit">Lägg till</button>
+      </form>
+      <ul id="inkop-lista" class="inkop-lista"></ul>
+      <p class="inkop-info">Listan sparas i din webbläsare på den här datorn. Vill ni att alla i gänget ska kunna redigera samma lista behöver sidan läggas ut på nätet med delad lagring — det kan jag hjälpa till med.</p>
+    </div>
+  </main>
+
+  <footer>Hvar 2026 · Gjord med kärlek inför resan</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    renderKort(restauranger, "#restauranger");
+    renderKort(handla, "#handla");
+    inkopslista();
+  </script>
+</body>
+</html>

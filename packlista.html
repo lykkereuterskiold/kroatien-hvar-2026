@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packlista · Hvar 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="topp" data-aktiv="packlista.html"></nav>
+
+  <div class="sidhuvud">
+    <h1>Packlista</h1>
+    <p>Klicka i rutan när något är packat.</p>
+  </div>
+
+  <main>
+    <div class="inkop">
+      <form id="pack-form" class="inkop-form">
+        <input id="pack-input" type="text" placeholder="Lägg till en sak att packa..." autocomplete="off">
+        <button type="submit">Lägg till</button>
+      </form>
+      <ul id="pack-lista" class="inkop-lista"></ul>
+      <p class="inkop-info">Listan sparas i din webbläsare på den här datorn.</p>
+    </div>
+  </main>
+
+  <footer>Hvar 2026 · Gjord med kärlek inför resan</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>packlista();</script>
+</body>
+</html>

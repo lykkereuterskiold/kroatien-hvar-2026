@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utflykter · Hvar 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="topp" data-aktiv="utflykter.html"></nav>
+
+  <div class="sidhuvud">
+    <h1>Utflykter</h1>
+    <p>Städer, byar, båtturer, stränder och våra guldkorn. Klicka på ett kort för att se det på kartan.</p>
+  </div>
+
+  <main>
+    <div class="grupp-rubrik">Städer &amp; byar</div>
+    <div class="kort-grid" id="stader"></div>
+
+    <div class="grupp-rubrik">Båtutflykter</div>
+    <div class="kort-grid" id="bat"></div>
+
+    <div class="grupp-rubrik">Stränder</div>
+    <div class="kort-grid" id="strand"></div>
+
+    <div class="grupp-rubrik">Guldkorn</div>
+    <div class="kort-grid" id="guldkorn"></div>
+  </main>
+
+  <footer>Hvar 2026 · Gjord med kärlek inför resan</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    renderKort(platser.filter(function (p) { return p.grupp === "stader"; }), "#stader");
+    renderKort(platser.filter(function (p) { return p.grupp === "bat"; }), "#bat");
+    renderKort(platser.filter(function (p) { return p.grupp === "strand"; }), "#strand");
+    renderKort(guldkorn, "#guldkorn");
+  </script>
+</body>
+</html>

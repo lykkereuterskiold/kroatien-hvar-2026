@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uteliv · Hvar 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="topp" data-aktiv="uteliv.html"></nav>
+
+  <div class="sidhuvud">
+    <h1>Uteliv &amp; beachklubbar</h1>
+    <p>Hvar är känt för sitt nattliv — här är de bästa ställena. Klicka för att se på kartan.</p>
+  </div>
+
+  <main>
+    <div class="kort-grid" id="uteliv"></div>
+  </main>
+
+  <footer>Hvar 2026 · Gjord med kärlek inför resan</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>renderKort(uteliv, "#uteliv");</script>
+</body>
+</html>
