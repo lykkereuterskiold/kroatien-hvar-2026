@@ -101,6 +101,18 @@ const restauranger = [
     lat:43.1707, lng:16.4460, lank:"https://code-11.hr/", ta:"https://www.tripadvisor.com/Restaurant_Review-g303808-d25563018-Reviews-Code_11-Hvar_Hvar_Island_Split_Dalmatia_County_Dalmatia.html" },
   { id:"dieci", namn:"Dieci", typ:"Middag", text:"Mysig pizzeria vid hamnen med god italiensk mat.",
     lat:43.1721, lng:16.4406, ta:"https://www.tripadvisor.com/Restaurant_Review-g303808-d27950693-Reviews-Pizzeria_Dieci_Hvar-Hvar_Hvar_Island_Split_Dalmatia_County_Dalmatia.html" },
+  { id:"black-pepper", namn:"Black Pepper", typ:"Restaurang", text:"Rustik krog med grillat och lokala rätter.",
+    lat:43.1732, lng:16.4423, ta:"https://www.tripadvisor.com/Search?q=Black%20Pepper%20Hvar" },
+  { id:"lungo-mare", namn:"Lungo Mare", typ:"Restaurang", text:"Havsnära restaurang med fisk och skaldjur.",
+    lat:43.1714, lng:16.4450, ta:"https://www.tripadvisor.com/Search?q=Lungo%20Mare%20Hvar" },
+  { id:"giaxa", namn:"Giaxa", typ:"Fine dining", text:"Elegant fine dining i ett gammalt stenpalats.",
+    lat:43.1731, lng:16.4406, ta:"https://www.tripadvisor.com/Search?q=Giaxa%20Hvar" },
+  { id:"fig", namn:"Fig Hvar", typ:"Café & bar", text:"Avslappnad café-bar med brunch och cocktails.",
+    lat:43.1726, lng:16.4416, ta:"https://www.tripadvisor.com/Search?q=Fig%20Hvar" },
+  { id:"slik", namn:"Slik", typ:"Vinbar", text:"Mysig vinbar med små rätter att dela.",
+    lat:43.1734, lng:16.4419, ta:"https://www.tripadvisor.com/Search?q=Slik%20Hvar" },
+  { id:"spice", namn:"Spice", typ:"Restaurang", text:"Modern meny med smaker från hela världen.",
+    lat:43.1728, lng:16.4431, ta:"https://www.tripadvisor.com/Search?q=Spice%20Hvar" },
 ];
 
 // Par (för matlag-hjulet, om det används)
