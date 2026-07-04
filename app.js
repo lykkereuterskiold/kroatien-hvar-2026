@@ -10,7 +10,6 @@ const SIDOR = [
   { fil: "uteliv.html",    namn: "Uteliv" },
   { fil: "hyra.html",      namn: "Hyra" },
   { fil: "mat.html",       namn: "Mat & handla" },
-  { fil: "lekar.html",     namn: "Lekar & spel" },
   { fil: "packlista.html", namn: "Packlista" },
 ];
 

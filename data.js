@@ -103,22 +103,5 @@ const restauranger = [
     lat:43.1721, lng:16.4406, ta:"https://www.tripadvisor.com/Restaurant_Review-g303808-d27950693-Reviews-Pizzeria_Dieci_Hvar-Hvar_Hvar_Island_Split_Dalmatia_County_Dalmatia.html" },
 ];
 
-const lekar = [
-  { namn:"Ta med en kortlek", typ:"Ta med", text:"Grunden till allt — kort räcker långt." },
-  { namn:"Ring of Fire", typ:"Dricklek", text:"Klassikern med kungens bägare." },
-  { namn:"Jag har aldrig", typ:"Dricklek", text:"Lär känna gänget på nya sätt." },
-  { namn:"Beer pong", typ:"Ta med", text:"Ta med bollar — muggar fixas på plats." },
-  { namn:"Flip cup", typ:"Lagspel", text:"Snabbt och rörigt, lag mot lag." },
-  { namn:"Musik-quiz", typ:"Spel", text:"Gissa låten — par mot par." },
-  { namn:"Höga & Låga", typ:"Kortspel", text:"Gissa om nästa kort är högre eller lägre." },
-  { namn:"Bussen", typ:"Kortspel", text:"Gissa dig igenom korten — sista får dricka." },
-  { namn:"Sanning eller konsekvens", typ:"Utmaning", text:"Klassiker som alltid urartar." },
-  { namn:"Vem i gänget", typ:"Dricklek", text:"\"Vem är mest trolig att...\" — peka och drick." },
-  { namn:"Två sanningar, en lögn", typ:"Spel", text:"Lär känna varandra — gissa lögnen." },
-  { namn:"30 sekunder", typ:"Sällskapsspel", text:"Beskriv orden mot klockan, lag mot lag." },
-  { namn:"Kubb", typ:"Ta med", text:"Trädgårdsklassiker om ni har plats." },
-  { namn:"Ölympiad", typ:"Lagspel", text:"Gör en egen tävlingsdag med roliga grenar." },
-];
-
 // Par (för matlag-hjulet, om det används)
 const paren = ["Joachim & Sofia", "Joel & Sofia", "Lykke & Emil"];
